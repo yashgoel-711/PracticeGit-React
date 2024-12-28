@@ -10,28 +10,29 @@ import './index.css'
 import App from './App.jsx'
 
 const router = createBrowserRouter([
+
   {
-    path : "/home",
-    element : <Home />
+    path : "/",
+    element : <><App /><Home /></>
   },
   {
     path : "/login",
-    element : <Login />
+    element : <><App /><Login /></>
   },
   {
     path : "/communities",
-    element : <Communities />
+    element : <><App /><Communities /></>
   },
   {
     path : "/register",
-    element : <Register />
+    element : <><App /><Register /></>
   },
   
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    
     <RouterProvider router={router} /> 
   </StrictMode>,
 )

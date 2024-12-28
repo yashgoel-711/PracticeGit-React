@@ -5,10 +5,10 @@ const Navbar = () => {
         <div className="bg-gray-800 p-4">
             <nav className="container mx-auto">
                 <ul className="flex space-x-4">
-                        <li><link to="/home" className="text-white hover:text-gray-400">Home</link></li>
-                        <li><link to="/communities" className="text-white hover:text-gray-400">Communities</link></li>
-                        <li><link to="/login" className="text-white hover:text-gray-400">Login</link></li>
-                        <li><link to="/register" className="text-white hover:text-gray-400">Register</link></li>
+                        <li><Link to="/" className="text-white hover:text-gray-400">Home</Link></li>
+                        <li><Link to="/communities" className="text-white hover:text-gray-400">Communities</Link></li>
+                        <li><Link to="/login" className="text-white hover:text-gray-400">Login</Link></li>
+                        <li><Link to="/register" className="text-white hover:text-gray-400">Register</Link></li>
                 </ul>
             </nav>
         </div>
